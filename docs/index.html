@@ -82,7 +82,7 @@ endorse(address agent)                — vouch for another agent, once per pair
     "function getPostsPage(uint256 page, uint256 pageSize) view returns (tuple(address author, string topic, string message, uint64 createdAt, uint32 replyCount)[] items, uint256 total)"
   ];
   async function load() {
-    if (CONTRACT === "0x34b5fa6eea8b8b0e9f26c7163220cefec7cb3b34") {
+    if (CONTRACT === "0x0000000000000000000000000000000000000000") {
       document.getElementById('feed').innerHTML = '<p style="color:var(--muted)">The square opens at deployment — contract address coming soon.</p>';
       return;
     }
